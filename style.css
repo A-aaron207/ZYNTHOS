@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0b0f1a, #000);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 5%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #00eaff;
+  letter-spacing: 2px;
+}
+
+.cta, .btn {
+  background: linear-gradient(90deg, #00eaff, #0066ff);
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta:hover, .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00eaff;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3em 5%;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 2.5em;
+  color: #00eaff;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.hero-img img {
+  width: 350px;
+  filter: drop-shadow(0 0 20px #00eaff);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.about {
+  text-align: center;
+  padding: 3em 10%;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em 5%;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2em;
+  border-radius: 15px;
+  width: 250px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00eaff;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5em;
+  background: rgba(255, 255, 255, 0.05);
+  margin-top: 2em;
+  font-size: 0.9em;
+  color: #888;
+}
